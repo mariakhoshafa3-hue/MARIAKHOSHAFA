@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>موقعي الشخصي</title>
+<style>
+:root{--bg:#0b0b0b;--card:rgba(255,255,255,.03);--gold:#bfa15b;--muted:#a6a6a6}
+*{box-sizing:border-box}body{margin:0;font-family:Cairo,system-ui,Segoe UI;background:linear-gradient(120deg,#070707,var(--bg));color:#fff}
+header{position:fixed;top:18px;right:18px;left:18px;display:flex;justify-content:flex-end;z-index:30}
+nav{background:rgba(255,255,255,.03);backdrop-filter:blur(6px);padding:8px;border-radius:999px;display:flex;gap:10px}
+nav a{color:#fff;text-decoration:none;padding:6px 10px;font-weight:600;border-radius:8px}
+main{max-width:1000px;margin:110px auto 50px;padding:24px}
+.hero{display:flex;gap:18px;align-items:center;padding:28px;border-radius:14px;background:linear-gradient(90deg,rgba(191,161,91,0.04),transparent);box-shadow:0 12px 40px rgba(0,0,0,.6)}
+.hero .left{flex:1}
+h1{margin:0;font-size:28px}
+.lead{color:var(--muted);margin:8px 0 14px}
+.meta{width:180px;text-align:center}
+.avatar{width:140px;height:140px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.04)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.section{margin:28px 0;padding:18px;border-radius:12px;background:var(--card)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+.card{border-radius:10px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);cursor:pointer;position:relative}
+.card img{width:100%;height:140px;object-fit:cover;display:block}
+.overlay{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;padding:8px;color:#fff;font-weight:600;background:linear-gradient(0deg,rgba(0,0,0,.5),transparent)}
+.skills p{color:var(--muted);margin:6px 0 0;font-size:14px}
+form{display:grid;gap:8px;grid-template-columns:1fr 1fr;margin-top:10px}
+input,textarea{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.04);padding:10px;color:#fff;border-radius:8px}
+.full{grid-column:1/-1}
+.btn{padding:8px 14px;border-radius:10px;font-weight:700;text-decoration:none;display:inline-block}
+.primary{background:linear-gradient(90deg,var(--gold),#e6c87b);color:#111}
+.ghost{border:1px solid rgba(255,255,255,.06);background:transparent;color:#fff}
+footer{color:var(--muted);text-align:center;margin-top:20px;font-size:13px}
+.lightbox{position:fixed;inset:0;display:none;place-items:center;background:rgba(0,0,0,.75);z-index:60}
+.lightbox.open{display:grid} .lightbox img{max-width:90%;max-height:80%;border-radius:10px}
+@media(max-width:880px){.hero{flex-direction:column}.meta{display:none}header{left:12px;right:12px}}
+</style>
+</head>
+<body>
+<header><nav>
+<a href="#home">الرئيسية</a><a href="#about">نبذه عني</a><a href="#skills">مهاراتي</a><a href="#portfolio">أعمالي</a><a href="#contact">تواصل معي</a>
+</nav></header>
+<main>
+<section id="home" class="hero">
+<div class="left">
+<h1>ماريا خشافه</h1>
+<p class="lead">مرحباً بكم في عالمي، حيث تتحول الأفكار إلى واقع هذا ليس مجرد مساحه الإلكترونيه بل نافذه تطل على رؤيتي وانجازاتي واحلامي كل زاويه فيه تمثل جزء مني فأهلا بكم اينما كنتم وشكرا لزيارتكم التي تعني لي الكثير.</p>
+<div style="display:flex;gap:10px"><a class="btn primary" href="#portfolio">شاهد أعمالي</a><a class="btn ghost" href="#contact">تواصل معي</a></div>
+</div>
+<div class="meta">
+<div class="avatar"><img src="C:\Users\User\Desktop\hom_work\12345678.jpg?text=ماريا" alt="ماريا"></div>
+<p style="color:var(--muted);margin-top:10px">مصوّرة • رسّامة • مصممة واجهات</p>
+</div>
+</section>
+
+<section id="about" class="section">
+<h2>نبذة عني</h2>
+<p style="color:var(--muted);margin-top:6px">أنا ماريا , طالبه في المستوِى الثالث أدرس تقنيه المعلومات أؤمن أن الجمال يكمن في التفاصيل الصغيرة. أعمل على تحويل الأفكار البسيطة إلى تجارب بصرية متكاملة  تجمع بين الذوق الرفيع والتقنية الحديثة .</p>
+</section>
+
+<section id="skills" class="section">
+<h2>مهاراتي</h2>
+<div class="grid skills">
+<div class="card" style="padding:12px"><h4> التصويرالفوتوغرافي</h4><p>في عالمي الصوره  لا تلتقط بل تخلق.</p></div>
+<div class="card" style="padding:12px"><h4>لوحات يدوية ورقمية</h4><p> اترجم مشاعري وخيالي الى خطوط والوان تنطق بالاحساس.</p></div>
+<div class="card" style="padding:12px"><h4>تصميم الواجهات والمواقع</h4><p>لكل تصميم قصه.....وانا ارويها ببصمتي.</p></div> 
+<div class="card" style="padding:12px"><h4>تحرير الصور والفيديوهات</h4><p>امزج بين الفن والدقه لأمنح كل صوره حياه جديده.</p></div>  
+
+</div>
+</section>
+
+<section id="portfolio" class="section">
+<h2>أعمالي</h2>
+<p style="color:var(--muted);margin-top:6px">نماذج مختارة — اضغطي لتكبير الصورة.</p>
+<div class="grid">
+<div class="card" data-img="https://via.placeholder.com/1200x800.png?text=عمل+1"><img src="C:\Users\User\Desktop\hom_work\1234567.jpg?text=عمل+1" alt="">
+<div class="overlay">جلسة تصوير</div></div>
+<div class="card" data-img="https://via.placeholder.com/1200x800.png?text=عمل+2"><img src="C:\Users\User\Desktop\hom_work\123456.jpg?text=عمل+2" alt=""><div class="overlay">لوحة فنية</div></div>
+<div class="card" data-img="https://via.placeholder.com/1200x800.png?text=عمل+3"><img src="C:\Users\User\Desktop\hom_work\123.jpg?text=عمل+3" alt=""><div class="overlay">تصميم موقع</div></div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>تواصل</h2>
+<p style="color:var(--muted);margin-top:6px"> لنصنع شيئاً عظيماً معاً — اترك بياناتك وسأعاود الاتصال بك.</p>
+<form onsubmit="event.preventDefault();alert('تم الاستلام — شكراً!');">
+<input name="name" placeholder="الاسم الكامل" required>
+<input name="email" placeholder="البريد الإلكتروني" required>
+<input class="full" name="subject" placeholder="الموضوع">
+<textarea class="full" name="message" placeholder="نص الرسالة..." required></textarea>
+<div class="full" style="display:flex;gap:8px;justify-content:flex-end">
+<button class="btn primary" type="submit">أرسل</button><a class="btn ghost" href="mailto:your@example.com">أرسل عبر البريد</a>
+</div>
+</form>
+</section>
+
+<footer>© 2025 ماريا — جميع الحقوق محفوظة</footer>
+</main>
+
+<div class="lightbox" id="lb" aria-hidden="true"><img id="lb-img" alt="تكبير"><button onclick="closeLB()" style="position:absolute;top:18px;left:18px;background:rgba(255,255,255,.06);border:none;padding:8px;border-radius:8px;color:#fff;cursor:pointer">إغلاق ✕</button></div>
+
+<script>
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth',block:'start'})}));
+document.querySelectorAll('.card[data-img]').forEach(c=>c.addEventListener('click',()=>{const src=c.dataset.img||c.querySelector('img').src;document.getElementById('lb-img').src=src;document.getElementById('lb').classList.add('open');document.getElementById('lb').setAttribute('aria-hidden','false')}));
+function closeLB(){document.getElementById('lb').classList.remove('open');document.getElementById('lb').setAttribute('aria-hidden','true')}
+document.getElementById('lb').addEventListener('click',e=>{ if(e.target.id==='lb') closeLB() });
+window.addEventListener('load',()=>document.querySelectorAll('.section,.hero').forEach((s,i)=>setTimeout(()=>s.style.transform='none',120*i)));
+</script>
+</body>
+</html>
